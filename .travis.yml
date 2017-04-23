@@ -1,0 +1,15 @@
+install: true
+git:
+  submodules: false
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+before_script:
+  - carthage bootstrap
+branches:
+  only:
+    - master
+language: objective-c
+osx_image: xcode8.3
+xcode_project: TDDKATA.xcodeproj
+xcode_scheme: TDDKATATests
