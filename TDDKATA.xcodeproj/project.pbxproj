@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3D7279431EA512450034C724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7279421EA512450034C724 /* AppDelegate.swift */; };
-		3D7279451EA512450034C724 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7279441EA512450034C724 /* ViewController.swift */; };
 		3D7279481EA512450034C724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7279461EA512450034C724 /* Main.storyboard */; };
 		3D72794A1EA512450034C724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D7279491EA512450034C724 /* Assets.xcassets */; };
 		3D72794D1EA512450034C724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D72794B1EA512450034C724 /* LaunchScreen.storyboard */; };
-		3D7279581EA512450034C724 /* TDDKATATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7279571EA512450034C724 /* TDDKATATests.swift */; };
+		3D72796C1EA513320034C724 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D72796A1EA513320034C724 /* Nimble.framework */; };
+		3D72796D1EA513320034C724 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D72796B1EA513320034C724 /* Quick.framework */; };
+		3D72796E1EA513390034C724 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D72796A1EA513320034C724 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D72796F1EA513390034C724 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D72796B1EA513320034C724 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D7279711EA513780034C724 /* GreetingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7279701EA513780034C724 /* GreetingSpec.swift */; };
+		3D7279731EA514490034C724 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7279721EA514490034C724 /* Greeting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,17 +29,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3D7279621EA512F80034C724 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D72796E1EA513390034C724 /* Nimble.framework in CopyFiles */,
+				3D72796F1EA513390034C724 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3D72793F1EA512440034C724 /* TDDKATA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDKATA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D7279421EA512450034C724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D7279441EA512450034C724 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D7279471EA512450034C724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D7279491EA512450034C724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D72794C1EA512450034C724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D72794E1EA512450034C724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D7279531EA512450034C724 /* TDDKATATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDKATATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D7279571EA512450034C724 /* TDDKATATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDKATATests.swift; sourceTree = "<group>"; };
 		3D7279591EA512450034C724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D72796A1EA513320034C724 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		3D72796B1EA513320034C724 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		3D7279701EA513780034C724 /* GreetingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingSpec.swift; sourceTree = "<group>"; };
+		3D7279721EA514490034C724 /* Greeting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D72796C1EA513320034C724 /* Nimble.framework in Frameworks */,
+				3D72796D1EA513320034C724 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +84,7 @@
 				3D7279411EA512450034C724 /* TDDKATA */,
 				3D7279561EA512450034C724 /* TDDKATATests */,
 				3D7279401EA512440034C724 /* Products */,
+				3D7279691EA513320034C724 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				3D7279421EA512450034C724 /* AppDelegate.swift */,
-				3D7279441EA512450034C724 /* ViewController.swift */,
 				3D7279461EA512450034C724 /* Main.storyboard */,
 				3D7279491EA512450034C724 /* Assets.xcassets */,
 				3D72794B1EA512450034C724 /* LaunchScreen.storyboard */,
 				3D72794E1EA512450034C724 /* Info.plist */,
+				3D7279721EA514490034C724 /* Greeting.swift */,
 			);
 			path = TDDKATA;
 			sourceTree = "<group>";
@@ -90,10 +113,19 @@
 		3D7279561EA512450034C724 /* TDDKATATests */ = {
 			isa = PBXGroup;
 			children = (
-				3D7279571EA512450034C724 /* TDDKATATests.swift */,
 				3D7279591EA512450034C724 /* Info.plist */,
+				3D7279701EA513780034C724 /* GreetingSpec.swift */,
 			);
 			path = TDDKATATests;
+			sourceTree = "<group>";
+		};
+		3D7279691EA513320034C724 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D72796A1EA513320034C724 /* Nimble.framework */,
+				3D72796B1EA513320034C724 /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +155,7 @@
 				3D72794F1EA512450034C724 /* Sources */,
 				3D7279501EA512450034C724 /* Frameworks */,
 				3D7279511EA512450034C724 /* Resources */,
+				3D7279621EA512F80034C724 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -152,6 +185,7 @@
 					3D7279521EA512450034C724 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 2QLBXZ66VC;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3D72793E1EA512440034C724;
 					};
@@ -201,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D7279451EA512450034C724 /* ViewController.swift in Sources */,
+				3D7279731EA514490034C724 /* Greeting.swift in Sources */,
 				3D7279431EA512450034C724 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D7279581EA512450034C724 /* TDDKATATests.swift in Sources */,
+				3D7279711EA513780034C724 /* GreetingSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,11 +402,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2QLBXZ66VC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TDDKATATests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.nspavlo.TDDKATATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDKATA.app/TDDKATA";
 			};
@@ -383,7 +423,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2QLBXZ66VC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TDDKATATests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.nspavlo.TDDKATATests;
