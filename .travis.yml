@@ -13,3 +13,5 @@ language: objective-c
 osx_image: xcode8.3
 xcode_project: TDDKATA.xcodeproj
 xcode_scheme: TDDKATATests
+script:
+  - xcodebuild test -project TDDKATA.xcodeproj -scheme TDDKATA -destination 'platform=iOS Simulator,name=iPhone 7'
