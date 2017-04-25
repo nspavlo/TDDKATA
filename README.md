@@ -17,3 +17,7 @@
 > Handle shouting. When name is all uppercase, then the method should shout back to the user. For example, when name is "JERRY" then the method should return the string "HELLO JERRY!"
 #### Requirement 4
 > Handle two names of input. When name is an array of two names (or, in languages that support it, varargs or a splat), then both names should be printed. For example, when name is ["Jill", "Jane"], then the method should return the string "Hello, Jill and Jane."
+
+### Prime Factors Kata
+> Write a class named “PrimeFactors” that has one static method: generate.
+The generate method takes an integer argument and returns a List<Integer>.  That list contains the prime factors in numerical sequence.
